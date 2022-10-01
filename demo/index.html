@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf8" />
+<title>prosemirror-details-list demo</title>
+
+<link rel="stylesheet" href="node_modules/prosemirror-view/style/prosemirror.css" />
+<link rel="stylesheet" href="node_modules/prosemirror-menu/style/menu.css" />
+<link rel="stylesheet" href="node_modules/prosemirror-example-setup/style/style.css" />
+
+<h1>prosemirror-details-list demo</h1>
+
+<div style="display: none" id="content">
+  <h2>Example content</h2>
+  <details>
+    <summary>open toggle</summary>
+    <p>hello😄</p>
+    <ul>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+  </details>
+  <p>outside text</p>
+</div>
+
+<div id="editor"></div>
+
+<script type="module" src="/demo.ts"></script>
