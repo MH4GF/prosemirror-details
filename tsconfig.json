@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}
