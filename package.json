@@ -1,5 +1,5 @@
 {
-  "name": "prosemirror-details-list",
+  "name": "@mh4gf/prosemirror-details-list",
   "version": "1.0.0",
   "description": "ProseMirror's open/close details list component",
   "type": "module",
