@@ -31,5 +31,5 @@ jobs:
         run: |
           yarn format
           git diff --exit-code
-      # - name: Run tests 🧪
-      #   run: yarn test
+      - name: Run tests 🧪
+        run: yarn test
