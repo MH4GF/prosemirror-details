@@ -1,8 +1,8 @@
 import type { NodeSpec } from 'prosemirror-model'
 
 type DetailsNodesOptions = {
-  // The content expression for detail node.
-  detailContent: string
+  // The content expression for details node.
+  detailsContent: string
   // The content expression for summary node.
   summaryContent: string
 }
@@ -10,12 +10,12 @@ type DetailsNodesOptions = {
 export const detailsNodes = (
   options: DetailsNodesOptions,
 ): Record<'details' | 'summary', NodeSpec> => {
-  const { detailContent, summaryContent } = options
+  const { detailsContent, summaryContent } = options
 
   return {
     details: {
       group: 'block',
-      content: `summary? ${detailContent}`,
+      content: `summary? ${detailsContent}`,
       attrs: {
         open: { default: false },
       },
