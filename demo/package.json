@@ -11,6 +11,7 @@
     "vite": "^3.1.4"
   },
   "dependencies": {
+    "@mh4gf/prosemirror-details-list": "file:..",
     "prosemirror-example-setup": "^1.2.1",
     "prosemirror-menu": "^1.2.1",
     "prosemirror-model": "^1.18.1",

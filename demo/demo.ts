@@ -1,3 +1,4 @@
+import { detailsNodes, DetailsView } from '@mh4gf/prosemirror-details-list'
 import { exampleSetup } from 'prosemirror-example-setup'
 import { Schema, DOMParser } from 'prosemirror-model'
 import { nodes, marks } from 'prosemirror-schema-basic'
@@ -5,7 +6,13 @@ import { EditorState } from 'prosemirror-state'
 import { EditorView } from 'prosemirror-view'
 
 const schema = new Schema({
-  nodes,
+  nodes: {
+    ...nodes,
+    ...detailsNodes({
+      detailsContent: 'block*',
+      summaryContent: 'text*',
+    }),
+  },
   marks,
 })
 
@@ -22,4 +29,9 @@ const state = EditorState.create({
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-window.view = new EditorView(document.querySelector('#editor'), { state })
+window.view = new EditorView(document.querySelector('#editor'), {
+  state,
+  nodeViews: {
+    details: (node, view, getPos) => new DetailsView(node, view, getPos),
+  },
+})
