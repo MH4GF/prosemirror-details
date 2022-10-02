@@ -3,4 +3,6 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'esbuild-jest',
   },
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['./jest-setup.ts']
 }

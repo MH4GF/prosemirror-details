@@ -1,1 +1,2 @@
-console.log('hello world')
+export { DetailsView } from './DetailsView'
+export { detailsNodes } from './schema'
