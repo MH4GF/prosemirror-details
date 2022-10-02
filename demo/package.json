@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-prosemirror-details-list": "cd ./node_modules/@mh4gf/prosemirror-details-list/; yarn install --frozen-lockfile; yarn build",
+    "prepare": "yarn build-prosemirror-details-list"
   },
   "devDependencies": {
     "typescript": "^4.8.4",
