@@ -6,13 +6,11 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
-  "style": "style/details.css",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
-    },
-    "./style/details.css": "./style/details.css"
+    }
   },
   "author": "MH4GF <h.miyagi.cnw@gmail.com>",
   "license": "MIT",
