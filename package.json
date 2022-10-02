@@ -56,7 +56,7 @@
     "lint": "eslint --ext=.ts ./src",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,json,css}'",
     "build-prosemirror-test-builder": "set -eux; if [ ! -f ./node_modules/prosemirror-test-builder/dist/index.js ]; then cd ./node_modules/prosemirror-test-builder; yarn install --frozen-lockfile; fi",
-    "postinstall": "yarn build-prosemirror-test-builder"
+    "test:prepare": "yarn build-prosemirror-test-builder"
   },
   "prettier": {
     "semi": false,
