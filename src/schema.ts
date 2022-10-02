@@ -26,9 +26,8 @@ export const detailsNodes = (
             if (typeof node === 'string') {
               return null
             }
-            const hasOpenAttr = node.hasAttribute('open')
 
-            return { open: hasOpenAttr, htmlOpen: hasOpenAttr }
+            return { open: node.hasAttribute('open') }
           },
         },
       ],
