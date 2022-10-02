@@ -7,7 +7,10 @@ import { builders } from 'prosemirror-test-builder'
 import { detailsNodes } from '../schema'
 
 export const tmpSchema = new Schema({
-  nodes: { ...detailsNodes({ detailsContent: 'block*', summaryContent: 'text*' }), ...basicNodes },
+  nodes: {
+    ...detailsNodes({ detailsGroup: 'block', detailsContent: 'block*', summaryContent: 'text*' }),
+    ...basicNodes,
+  },
 })
 
 export const tag = builders(tmpSchema)

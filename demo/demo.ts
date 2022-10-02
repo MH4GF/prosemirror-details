@@ -11,6 +11,7 @@ const schema = new Schema({
   nodes: {
     ...nodes,
     ...detailsNodes({
+      detailsGroup: 'block',
       detailsContent: 'block+',
       summaryContent: 'text*',
     }),
