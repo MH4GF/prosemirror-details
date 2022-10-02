@@ -11,7 +11,6 @@ module.exports = {
     'plugin:testing-library/dom',
     'plugin:jest-dom/recommended',
   ],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

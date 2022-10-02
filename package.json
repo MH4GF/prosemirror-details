@@ -48,7 +48,7 @@
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
     "build:types": "tsc --emitDeclarationOnly --outDir dist/types",
     "test": "jest",
-    "lint": "eslint --ext=.ts .",
+    "lint": "eslint --ext=.ts ./src",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,json,css}'",
     "build-prosemirror-test-builder": "set -eux; if [ ! -f ./node_modules/prosemirror-test-builder/dist/index.js ]; then cd ./node_modules/prosemirror-test-builder; yarn install --frozen-lockfile; yarn build; fi",
     "postinstall": "yarn build-prosemirror-test-builder"
