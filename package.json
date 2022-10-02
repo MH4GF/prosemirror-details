@@ -18,13 +18,20 @@
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/strictest": "^1.0.2",
+    "@types/jest": "^29.1.1",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
+    "esbuild": "^0.15.10",
+    "esbuild-jest": "^0.5.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "jest": "^29.1.2",
     "prettier": "^2.7.1",
+    "prosemirror-model": "^1.18.1",
+    "prosemirror-schema-basic": "^1.2.0",
+    "prosemirror-test-builder": "https://github.com/ProseMirror/prosemirror-test-builder.git#master",
     "typescript": "^4.8.4"
   },
   "scripts": {
@@ -32,8 +39,11 @@
     "build:esm": "tsc --module es2015 --target es2015 --outDir dist/esm",
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
     "build:types": "tsc --emitDeclarationOnly --outDir dist/types",
+    "test": "jest",
     "lint": "eslint --ext=.ts .",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,json,css}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,json,css}'",
+    "build-prosemirror-test-builder": "set -eux; if [ ! -f ./node_modules/prosemirror-test-builder/dist/index.js ]; then cd ./node_modules/prosemirror-test-builder; yarn install --frozen-lockfile; yarn build; fi",
+    "postinstall": "yarn build-prosemirror-test-builder"
   },
   "prettier": {
     "semi": false,
