@@ -3,7 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "node"
   },
   "include": ["src", "jest-setup.ts"]
 }

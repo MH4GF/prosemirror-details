@@ -16,6 +16,12 @@
   },
   "author": "MH4GF <h.miyagi.cnw@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "prosemirror-model": "^1.18.1",
+    "prosemirror-schema-basic": "^1.2.0",
+    "prosemirror-state": "^1.4.1",
+    "prosemirror-view": "^1.28.2"
+  },
   "devDependencies": {
     "@testing-library/dom": "^8.18.1",
     "@testing-library/jest-dom": "^5.16.5",
