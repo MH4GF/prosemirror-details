@@ -13,6 +13,10 @@
     }
   },
   "author": "MH4GF <h.miyagi.cnw@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mh4gf/prosemirror-details-list.git"
+  },
   "license": "MIT",
   "peerDependencies": {
     "prosemirror-model": "^1.18.1",
