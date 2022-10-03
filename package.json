@@ -12,6 +12,9 @@
       "require": "./dist/cjs/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "author": "MH4GF <h.miyagi.cnw@gmail.com>",
   "repository": {
     "type": "git",
