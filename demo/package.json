@@ -6,15 +6,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build-prosemirror-details-list": "cd ./node_modules/@mh4gf/prosemirror-details-list/; yarn install --frozen-lockfile; yarn build",
-    "prepare": "yarn build-prosemirror-details-list"
+    "build-prosemirror-details": "cd ./node_modules/@mh4gf/prosemirror-details/; yarn install --frozen-lockfile; yarn build",
+    "prepare": "yarn build-prosemirror-details"
   },
   "devDependencies": {
     "typescript": "^4.8.4",
     "vite": "^3.1.4"
   },
   "dependencies": {
-    "@mh4gf/prosemirror-details-list": "file:..",
+    "@mh4gf/prosemirror-details": "file:..",
     "prosemirror-example-setup": "^1.2.1",
     "prosemirror-menu": "^1.2.1",
     "prosemirror-model": "^1.18.1",

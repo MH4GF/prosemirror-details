@@ -1,4 +1,4 @@
-import { detailsNodes, DetailsView } from '@mh4gf/prosemirror-details-list'
+import { detailsNodes, DetailsView } from '@mh4gf/prosemirror-details'
 import { buildMenuItems, exampleSetup } from 'prosemirror-example-setup'
 import { Dropdown, MenuItem } from 'prosemirror-menu'
 import { Schema, DOMParser } from 'prosemirror-model'

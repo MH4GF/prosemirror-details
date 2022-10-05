@@ -1,5 +1,5 @@
 {
-  "name": "@mh4gf/prosemirror-details-list",
+  "name": "@mh4gf/prosemirror-details",
   "version": "1.0.0",
   "description": "ProseMirror's open/close details list component",
   "type": "module",
@@ -18,7 +18,7 @@
   "author": "MH4GF <h.miyagi.cnw@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mh4gf/prosemirror-details-list.git"
+    "url": "git://github.com/mh4gf/prosemirror-details.git"
   },
   "license": "MIT",
   "peerDependencies": {
