@@ -1,6 +1,6 @@
 {
   "name": "@mh4gf/prosemirror-details",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ProseMirror's open/close details list component",
   "type": "module",
   "main": "dist/cjs/index.js",
