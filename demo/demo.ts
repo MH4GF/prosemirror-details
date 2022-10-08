@@ -1,4 +1,5 @@
 import { detailsNodes, DetailsView } from '@mh4gf/prosemirror-details'
+import devTools from 'prosemirror-dev-tools'
 import { buildMenuItems, exampleSetup } from 'prosemirror-example-setup'
 import { Dropdown, MenuItem } from 'prosemirror-menu'
 import { Schema, DOMParser } from 'prosemirror-model'
@@ -65,11 +66,15 @@ const state = EditorState.create({
   }),
 })
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-window.view = new EditorView(document.querySelector('#editor'), {
+const view = new EditorView(document.querySelector('#editor'), {
   state,
   nodeViews: {
     details: (node, view, getPos) => new DetailsView(node, view, getPos),
   },
 })
+
+devTools(view)
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+window.view = view
